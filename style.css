@@ -7,4 +7,18 @@
   padding: 10px 10px;
   background-color: rgb(120, 201, 129);
   justify-content: center;
+  position: relative;
+}
+.done {
+  text-decoration: line-through;
+}
+
+.todo-action {
+  position: absolute;
+  right: 15;
+  bottom: 35%;
+}
+
+.none {
+  display: none;
 }

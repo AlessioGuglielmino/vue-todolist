@@ -49,5 +49,9 @@ createApp({
       const newObject = { text: this.newText, done: false };
       this.toDoList.push(newObject);
     },
+    removeTask(index) {
+      console.log("click");
+      this.toDoList.splice(index, 1);
+    },
   },
 }).mount("#app");

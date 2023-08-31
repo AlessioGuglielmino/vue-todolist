@@ -39,7 +39,7 @@
 
           <!-- INPUT -->
 
-          <div class="input-group mb-3 w-50 mx-auto">
+          <div class="input-group mb-3 w-75 mx-auto">
             <input
               type="text"
               class="form-control"
@@ -57,8 +57,18 @@
           </div>
 
           <ul class="list-todo mx-auto te">
-            <li class="todo-element mt-2" v-for="element in toDoList">
+            <li
+              class="todo-element mt-2"
+              v-for="(element,index) in toDoList"
+              :class="element.done==true ? 'done':'' "
+            >
               {{element.text}}
+              <span class="todo-action">
+                <i
+                  @click="removeTask(index)"
+                  class="fa-regular fa-circle-xmark"
+                ></i>
+              </span>
             </li>
           </ul>
         </div>
