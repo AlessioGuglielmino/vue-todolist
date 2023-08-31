@@ -1,0 +1,10 @@
+.list-todo {
+  list-style: none;
+  width: 50%;
+  margin: auto;
+}
+.todo-element {
+  padding: 10px 10px;
+  background-color: rgb(120, 201, 129);
+  justify-content: center;
+}
